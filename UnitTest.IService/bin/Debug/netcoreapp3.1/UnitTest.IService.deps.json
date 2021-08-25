@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "UnitTest.IService/1.0.0": {
+        "dependencies": {
+          "UnitTest.Model": "1.0.0"
+        },
+        "runtime": {
+          "UnitTest.IService.dll": {}
+        }
+      },
+      "UnitTest.Model/1.0.0": {
+        "runtime": {
+          "UnitTest.Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UnitTest.IService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "UnitTest.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

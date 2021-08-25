@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UnitTest.EFCore\UnitTest.EFCore.csproj" />
+    <ProjectReference Include="..\UnitTest.IRepository\UnitTest.IRepository.csproj" />
+    <ProjectReference Include="..\UnitTest.IService\UnitTest.IService.csproj" />
+    <ProjectReference Include="..\UnitTest.Model\UnitTest.Model.csproj" />
+    <ProjectReference Include="..\UnitTest.Repository\UnitTest.Repository.csproj" />
+    <ProjectReference Include="..\UnitTest.Service\UnitTest.Service.csproj" />
+  </ItemGroup>
+
+</Project>

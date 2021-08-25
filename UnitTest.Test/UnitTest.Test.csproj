@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="5.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.9" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+    <PackageReference Include="Moq" Version="4.16.1" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="1.3.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UnitTest.API\UnitTest.API.csproj" />
+    <ProjectReference Include="..\UnitTest.EFCore\UnitTest.EFCore.csproj" />
+    <ProjectReference Include="..\UnitTest.IRepository\UnitTest.IRepository.csproj" />
+    <ProjectReference Include="..\UnitTest.IService\UnitTest.IService.csproj" />
+    <ProjectReference Include="..\UnitTest.Model\UnitTest.Model.csproj" />
+    <ProjectReference Include="..\UnitTest.Repository\UnitTest.Repository.csproj" />
+    <ProjectReference Include="..\UnitTest.Service\UnitTest.Service.csproj" />
+  </ItemGroup>
+
+</Project>
